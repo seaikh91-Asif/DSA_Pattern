@@ -35,7 +35,7 @@ public class Count_occurence_anagram {
                 // answer cheack
                 if (count == 0) ans++;
 
-                // window sliding
+                // window sliding window sliding
                 char charI = txt.charAt(i);
                 if (mp.containsKey(charI)) {
                     mp.put(charI, mp.get(charI) + 1);
