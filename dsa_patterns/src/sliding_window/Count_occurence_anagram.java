@@ -22,7 +22,7 @@ public class Count_occurence_anagram {
         int i = 0, j = 0;
 
         while (j < n) {
-            // calculation
+            // calculation calculation 
             char charJ = txt.charAt(j);
             if (mp.containsKey(charJ)) {
                 mp.put(charJ, mp.get(charJ) - 1);
@@ -32,7 +32,7 @@ public class Count_occurence_anagram {
             if (j - i + 1 < k) {
                 j++;
             } else if (j - i + 1 == k) {
-                // answer cheack
+                // answer cheack answer cheack
                 if (count == 0) ans++;
 
                 // window sliding window sliding
