@@ -22,7 +22,7 @@ public class Count_occurence_anagram {
         int i = 0, j = 0;
 
         while (j < n) {
-            // calculation calculation 
+            // calculation calculation commit
             char charJ = txt.charAt(j);
             if (mp.containsKey(charJ)) {
                 mp.put(charJ, mp.get(charJ) - 1);
