@@ -12,7 +12,7 @@ public class Count_occurence_anagram {
         int n = txt.length();
         Map<Character, Integer> mp = new HashMap<>();
 
-        // mapping the frequency of pattern
+        // mapping the frequency of pattern commit
         for (char c : pat.toCharArray()) {
             mp.put(c, mp.getOrDefault(c, 0) + 1);
         }
