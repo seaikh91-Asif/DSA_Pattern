@@ -3,7 +3,7 @@ package Pattern_Striver_AtoZ;
 public class Pattern_1 {
     public static void main(String [] args) {
        System.out.println("Pattern 1: ");
-       pattern_2(4);
+       pattern_3(5);
     }
 
     static void pattern_1(int n) {
@@ -21,6 +21,15 @@ public class Pattern_1 {
                System.out.print("* ");
            }
            System.out.println();
+        }
+    }
+
+    static void pattern_3(int n ){
+        for(int i = 1; i <=n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
         }
     }
 }
