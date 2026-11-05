@@ -1,9 +1,9 @@
 package Pattern_Striver_AtoZ;
 
-public class Pattern_1 {
+public class Patterrns_StriverSheet {
     public static void main(String [] args) {
        System.out.println("Pattern 1: ");
-       pattern_4(5);
+       pattern_5(5);
     }
 
     static void pattern_1(int n) {
@@ -34,9 +34,18 @@ public class Pattern_1 {
     }
 
     static void pattern_4(int n ){
-        for(int i = 1; i <=n; i++){ // n = 3; i = 1; i <= 3 : ture;
-            for(int j = 1; j <= i; j++){ // j = 1; j <= i = 1: ture:
-                System.out.print(i + " "); // print 1
+        for(int i = 1; i <=n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_5(int n) {
+        for(int i = 1; i <= n; i++){
+            for(int j = 0; j < n-i+1; j++){
+                System.out.print("* ");
             }
             System.out.println();
         }
