@@ -2,7 +2,7 @@ package Pattern_Striver_AtoZ;
 
 public class Level_Two {
     public static void main(String[] args){
-        pattern_8(5);
+        pattern_9(5);
     }
 
     static void pattern_7(int n) {
@@ -39,4 +39,9 @@ public class Level_Two {
             System.out.println();
         }
     }
-}
+
+    static void pattern_9(int n) {
+        pattern_7(n);
+        pattern_8(n);
+    }
+ }
