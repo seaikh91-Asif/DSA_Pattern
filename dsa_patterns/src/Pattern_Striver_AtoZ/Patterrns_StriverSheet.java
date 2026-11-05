@@ -3,7 +3,7 @@ package Pattern_Striver_AtoZ;
 public class Patterrns_StriverSheet {
     public static void main(String [] args) {
        System.out.println("Pattern 1: ");
-       pattern_5(5);
+       pattern_6(5);
     }
 
     static void pattern_1(int n) {
@@ -46,6 +46,15 @@ public class Patterrns_StriverSheet {
         for(int i = 1; i <= n; i++){
             for(int j = 0; j < n-i+1; j++){
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_6(int n) {
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= n-i+1; j++){
+                System.out.print( j+" ");
             }
             System.out.println();
         }
