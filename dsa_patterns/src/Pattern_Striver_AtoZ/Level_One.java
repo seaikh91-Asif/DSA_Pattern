@@ -1,8 +1,8 @@
 package Pattern_Striver_AtoZ;
 
-public class Patterrns_StriverSheet {
+public class Level_One {
     public static void main(String [] args) {
-       System.out.println("Pattern 1: ");
+       System.out.println("Level One Patterns: ");
        pattern_6(5);
     }
 
