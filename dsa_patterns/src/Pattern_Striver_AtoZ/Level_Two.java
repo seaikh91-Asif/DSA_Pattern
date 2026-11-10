@@ -2,7 +2,7 @@ package Pattern_Striver_AtoZ;
 
 public class Level_Two {
     public static void main(String[] args){
-        pattern_11(6);
+        pattern_13(5);
     }
 
     static void pattern_7(int n) {
@@ -69,6 +69,37 @@ public class Level_Two {
             for(int j = 1; j <= i; j++){
                 System.out.print(stars);
                 stars = 1 - stars;
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_12(int n) {
+        int space  = 2 * (n -1);
+        for( int i = 1; i <= n; i++){
+            //numbers
+            for( int j = 1; j <= i; j++){
+                System.out.print(j);
+            }
+            //space
+            for(int j = 1; j<= space; j++){
+                System.out.print(" ");
+            }
+            //numbers
+            for(int j =i; j >= 1; j--){
+                System.out.print(j);
+            }
+            System.out.println();
+            space -= 2;
+        }
+    }
+
+    static void pattern_13(int n){
+        int number = 1;
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j<= i; j++){
+                System.out.print(" " + number);
+                number++;
             }
             System.out.println();
         }
