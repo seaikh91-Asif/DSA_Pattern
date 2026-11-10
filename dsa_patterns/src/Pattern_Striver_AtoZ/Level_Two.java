@@ -1,10 +1,6 @@
 package Pattern_Striver_AtoZ;
 
 public class Level_Two {
-    public static void main(String[] args){
-        pattern_13(5);
-    }
-
     static void pattern_7(int n) {
         for(int i = 0; i < n; i++){
             // space
@@ -103,5 +99,26 @@ public class Level_Two {
             }
             System.out.println();
         }
+    }
+
+    static void pattern_14(int n){
+        for(int i = 0; i < n; i++){
+            for(char ch = 'A'; ch <= 'A' + i; ch++){
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_15(int n){
+        for(int i = 0; i < n; i++){
+            for(char ch = 'A'; ch <= 'A' + (n - i - 1); ch++){
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static void main(String[] args){
+        pattern_15(5);
     }
  }
