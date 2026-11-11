@@ -52,9 +52,29 @@ Pattern: 19
             System.out.println();
             initSpace -= 2;
         }
+    }
 
+    /*
+    Pattern: 21
+        * * * * *
+        *       *
+        *       *
+        *       *
+        * * * * *
+    */
+    static void pattern_21(int n){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                if(i == 0 || j == 0 || i == n - 1|| j == n - 1){
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
     }
     public static void main(String[] args){
-        pattern_19(5);
+        pattern_21(5);
     }
 }
