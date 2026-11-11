@@ -118,7 +118,51 @@ public class Level_Two {
             System.out.println();
         }
     }
+
+    static void pattern_16(int n){
+        for(int i = 0; i < n; i++){
+            char ch = (char) ('A' + i);
+            for(int j = 0; j <= i; j++){
+                System.out.print( ch + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern_17(int n){
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n - i - 1; j++){
+                System.out.print(" ");
+            }
+
+            char ch = 'A';
+            int breakpoint =  ( 2 * i + 1) /2;
+            for(int j = 1; j <= 2 * i + 1; j++){
+                System.out.println(ch);
+                if(j <= breakpoint) {
+                    ch++;
+                } else{
+                    ch--;
+                }
+            }
+
+            for(int j = 0; j < n - i - 1; j++){
+                System.out.print(" ");
+            }
+
+            System.out.println();
+        }
+    }
+
+    static void pattern_18(int n){
+        for(int i = 0; i < n; i++){
+            for(char ch = (char) ('E' - i); ch <= 'E'; ch++){
+                System.out.print(ch + " ");
+            }
+            System.out.println();
+        }
+    }
     public static void main(String[] args){
-        pattern_15(5);
+        pattern_18(5);
     }
  }
